@@ -18,11 +18,11 @@
 }
 
 .friendText {
-
+    color: black;
 }
 
 .friendText:after {
-
+    color: black;
 }
 
 .friendName {

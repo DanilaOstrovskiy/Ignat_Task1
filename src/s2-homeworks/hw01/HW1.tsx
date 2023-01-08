@@ -57,8 +57,8 @@ const HW1 = () => {
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
-                    <Message name={message0.user.name} id={message0.id} text={message0.message.text} avatar={message0.user.avatar} message={message0} time={message0.message.time} />
-                    <FriendMessage name={friendMessage0.user.name} id={friendMessage0.id} text={friendMessage0.message.text} avatar={friendMessage0.user.avatar} message={friendMessage0} time={friendMessage0.message.time} />
+                    <Message message={message0} />
+                    <FriendMessage friendMessage={friendMessage0} />
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}
