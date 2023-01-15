@@ -3,6 +3,7 @@
     height: 60px;
     background: #F5F7FB;
     box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+
 }
 
 .friendImageAndText {
@@ -19,6 +20,7 @@
 
 .friendText {
     color: black;
+    margin: 10px;
 }
 
 .friendText:after {
