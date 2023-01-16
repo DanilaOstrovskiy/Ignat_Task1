@@ -15,14 +15,14 @@ import avatar from './avatar.png'
 
 // нужно создать правильный тип вместо any+
 export type MessageType = {
-    id:number,
-    user:{
-        avatar:string,
-        name:string
+    id: number,
+    user: {
+        avatar: string,
+        name: string
     }
-    message:{
-        text:string;
-        time:string
+    message: {
+        text: string;
+        time: string
     }
 }
 
@@ -55,14 +55,9 @@ const HW1 = () => {
         <div id={'hw1'}>
             <div className={s2.hwTitle}>Homework #1</div>
             <div className={s2.hw}>
-                {/*проверка отображения (не менять)*/}
-                <div>
-                    <Message message={message0} />
-                    <FriendMessage friendMessage={friendMessage0} />
-                </div>
-
-                {/*для автоматической проверки дз (не менять)*/}
-                <MessageSender M={Message} />
+                <Message message={message0}/>
+                <FriendMessage friendMessage={friendMessage0}/>
+                <MessageSender M={Message}/>
             </div>
         </div>
     )
