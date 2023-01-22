@@ -46,26 +46,23 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         error && setError('')
     }
     const addUser = () => {
-        // это всего лишь функция стрелочник- она всего лишь получает
-        //сигнал из компоненты <Greeting/> и вызывает pureAddUser (с кучей аргументов)
-        // ЗДЕСЬ НИЧЕГО ПИСАТЬ НЕ НУЖНО-ВСЕ ОК
+
 
         pureAddUser(name, setError, setName, addUserCallback)
     }
 
     const onBlur = () => {
-        // все тоже самое, что и в addUser -функция стрелочник
-        // всего лишь получает сигнали из компоненты <Greeting/> и вызывает pureOnBlur (с кучкой аргументов)
+
         pureOnBlur(name, setError)
     }
 
     const onEnter = (e: any) => {
-        // и здесь все тоже самое...)
+
         pureOnEnter(e, addUser)
     }
 
-    const totalUsers = users.length // need to fix+
-    const lastUserName = name ;
+    const totalUsers = users.length
+    const lastUserName = totalUsers >0? users[users.length -1].name : name ;
     console.log(lastUserName)
 
 

@@ -1,12 +1,11 @@
 .greetingForm {
-    display:flex;
     flex-direction: column;
 }
 
 .inputAndButtonContainer {
     display: inline-flex;
     flex-direction: row;
-    min-width: 460px
+    min-width: 460px;
 
 }
 
@@ -18,21 +17,21 @@
     min-height: 36px;
     min-width: 372px;
     border-color: black;
-    border-radius: 20px
+    border-radius: 5px;
 }
 
 .input:focus {
     min-height: 36px;
     min-width: 372px;
     border-color: black;
-    border-radius: 20px
+    border-radius:5px;
 }
 
 .errorInput {
     min-height: 36px;
     min-width: 372px;
     border-color: #cc0000;
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 .button {
