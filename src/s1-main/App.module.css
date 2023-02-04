@@ -1,31 +1,31 @@
-@font-face{
-    font-family: 'Montserrat';
+.body {
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    src: url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic'");
 }
 
 .App {
-    --header_height: 131px;
+
 }
 
 .hw {
+    margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
     flex-direction: column;
-    height:fit-content ;
-
-
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
 }
 
-.hw message {
 
+.hw message {
 
 }
 
 .hwTitle {
-    display: flex;
-    font-style: normal;
+    margin: 131px 0px 0px 0px;
+    padding-left: 50px;
+    border-bottom: 2px solid #D9D9D9;
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;

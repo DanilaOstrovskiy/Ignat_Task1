@@ -1,5 +1,8 @@
 .sendForm {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+
 
 }
 
@@ -18,11 +21,12 @@
 
 .button {
     background: #0066CC;
+    border-color: transparent;
     border-radius: 20px;
     min-width: 120px;
-    height: 40px;
+    height: 48px;
     color: #FFFFFF;
-
+    margin-left: 20px;
 
 
 }
