@@ -9,12 +9,7 @@
 
 .hw {
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
+
 }
 
 

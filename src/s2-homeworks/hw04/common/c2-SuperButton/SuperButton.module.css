@@ -1,71 +1,59 @@
 .button {
-    /* Add button styling */
-    background-color: blue;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    cursor: pointer;
+    min-width: 132px;
+    min-height: 30px;
+    border-radius: 3px;
 }
 
 .disabled {
-    /* Add styling for disabled state */
+    background-color: #004D99;
     opacity: 0.5;
     pointer-events: none;
 }
 
 .secondary {
-    /* Add styling for secondary button */
-    background-color: gray;
-    color: black;
+    background-color: white;
+    color: #0066CC;
 }
 
 .default {
-    /* Add styling for default button */
-    background-color: blue;
+    background-color: #0066CC;
     color: white;
 }
 
 .red {
-    /* Add styling for red button */
-    background-color: red;
+    background-color: #CC1439;
     color: white;
 }
 
 .default:hover {
-    /* Add styling for default button hover */
-    background-color: darkblue;
+
+    background-color: #0080FF;
 }
 
 .red:hover {
-    /* Add styling for red button hover */
-    background-color: darkred;
+
+    background-color: #FF1A47;
 }
 
 .secondary:hover {
-    /* Add styling for secondary button hover */
     background-color: darkgray;
 }
 
 .default:active {
-    /* Add styling for default button active */
-    background-color: navy;
+    background-color: #0080FF;
 }
 
 .secondary:active {
-    /* Add styling for secondary button active */
     background-color: black;
 }
 
 .red:active {
-    /* Add styling for red button active */
     background-color: maroon;
 }
 
 .button:disabled {
-    /* Add styling for disabled button */
     background-color: lightgray;
     color: darkgray;
-    cursor: not-allowed;
+
 }
