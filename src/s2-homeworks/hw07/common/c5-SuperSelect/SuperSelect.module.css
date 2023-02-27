@@ -1,9 +1,28 @@
 .select {
+    display: flex;
+    width: 180px;
+    height: 24px;
+    margin-left: 70px;
+    padding-left: 10px;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("./chevron-down.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 1.65em auto, 100% ;
 }
 
 .select:focus {
+    outline: none;
 }
 
-
 .option:hover {
+    background-color: #0066CC;
+    color: red;
+
+}
+
+.option:checked{
+    color:#0066CC;
+    background: white;
 }
