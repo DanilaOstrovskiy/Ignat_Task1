@@ -2,13 +2,20 @@
 }
 
 .clock {
+    margin: 15px 0px 0px 70px;
 }
 
 .watch {
+    margin: 0px 0px 5px 0px;
+
 }
 
 .watch strong {
+
 }
 
 .more {
+    color: grey;
+    margin: 0px 0px 30px 0px;
+
 }

@@ -3,18 +3,26 @@
     min-width: 132px;
     min-height: 30px;
     border-radius: 3px;
-    margin-right: 40px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+
 }
 
 .disabled {
     background-color: #004D99;
+    border-color:  grey;
     opacity: 0.5;
     pointer-events: none;
+
 }
 
 .secondary {
     background-color: white;
+    border-color:#0066CC;
     color: #0066CC;
+    font-weight: bold;
+    outline:none;
+    box-shadow: none;
 }
 
 .default {
@@ -23,6 +31,7 @@
 }
 
 .red {
+    border-color:  #CC1439;
     background-color: #CC1439;
     color: white;
 }
@@ -56,5 +65,6 @@
 .button:disabled {
     background-color: lightgray;
     color: darkgray;
+    border-color:  grey;
 
 }
