@@ -21,9 +21,9 @@ function Pages() {
                 <Route  path={'/'} element={<Navigate to={'/pre-junior'}/>}/>
 
                 {/*роуты для /pre-junior, /junior, /junior-plus*/}
-                <Route path={'/pre-junior'} element={<PreJunior />}/>
-                <Route path={'/junior'} element={<Junior />}/>
-                <Route path={'/junior-plus'} element={<JuniorPlus />}/>
+                <Route path={'/pre-junior'} element={<PreJunior/>}/>
+                <Route path={'/junior'} element={<Junior/>}/>
+                <Route path={'/junior-plus'} element={<JuniorPlus/>}/>
 
                 {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
                 <Route path={'/*'} element={<Error404 />}/>
