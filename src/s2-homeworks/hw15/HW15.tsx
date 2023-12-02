@@ -30,7 +30,7 @@ type ParamsType = {
 const getTechs = (params: ParamsType) => {
     return axios
         .get<{ techs: TechType[], totalCount: number }>(
-            'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test3',
+            'https://samurai.it-incubator.io/api/3.0/homework/test3',
             {params}
         )
         .catch((e) => {
@@ -38,7 +38,7 @@ const getTechs = (params: ParamsType) => {
         })
 }
 
-const HW15 = () => {
+export const HW15 = () => {
     const [sort, setSort] = useState('')
     const [page, setPage] = useState(1)
     const [count, setCount] = useState(4)
@@ -51,36 +51,30 @@ const HW15 = () => {
         setLoading(true)
         getTechs(params)
             .then((res) => {
-                // делает студент
-
-                // сохранить пришедшие данные
-
-                //
+                if (res) {
+                    setTechs(res.data.techs);
+                    setTotalCount(res.data.totalCount);
+                }
+                setLoading(false);
             })
+            .catch((e) => {
+                alert(e.response?.data?.errorText || e.message);
+                setLoading(false);
+            });
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
-        // делает студент
-
-        // setPage(
-        // setCount(
-
-        // sendQuery(
-        // setSearchParams(
-
-        //
+        setPage(newPage);
+        setCount(newCount);
+        sendQuery({ page: newPage, count: newCount });
+        setSearchParams({ page: String(newPage), count: String(newCount) });
     }
 
     const onChangeSort = (newSort: string) => {
-        // делает студент
-
-        // setSort(
-        // setPage(1) // при сортировке сбрасывать на 1 страницу
-
-        // sendQuery(
-        // setSearchParams(
-
-        //
+        setSort(newSort);
+        setPage(1);
+        sendQuery({ page, count, sort: newSort });
+        setSearchParams();
     }
 
     useEffect(() => {
@@ -134,4 +128,3 @@ const HW15 = () => {
     )
 }
 
-export default HW15
